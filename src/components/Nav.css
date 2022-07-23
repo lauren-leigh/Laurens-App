@@ -13,6 +13,7 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background-color: hsl(160, 100%, 50%);
     margin-right: 5%;
 }
@@ -25,4 +26,40 @@ li {
 h2 {
     background-color: hsl(160, 100%, 50%);
     margin-left: 5%;
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+@keyframes depth {
+    0% {
+        text-shadow: 0 0 hsl(257, 24%, 15%);
+    }
+    
+    25% {
+        text-shadow: 1px 0 hsl(257, 24%, 15%), 2px 0 hsl(257, 24%, 15%), 3px 0 hsl(257, 24%, 15%), 4px 0 hsl(257, 24%, 15%), 5px 0 hsl(257, 24%, 15%);
+    }
+    
+    50% {
+        text-shadow: 0 0 hsl(257, 24%, 15%);
+    }
+    
+    75% {
+        text-shadow: -1px 0 hsl(257, 24%, 15%), -2px 0 hsl(257, 24%, 15%), -3px 0 hsl(257, 24%, 15%), -4px 0 hsl(257, 24%, 15%), -5px 0 hsl(257, 24%, 15%);
+    }
+    
+    100% {
+        text-shadow: 0 0 hsl(257, 24%, 15%);
+     }
 }

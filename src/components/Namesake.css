@@ -1,11 +1,15 @@
 
 .name-holder {
     margin-top: 20%;
+    perspective: 500px;
 }
 
 h1 {
-    color: hsl(160, 100%, 50%)
+    font-size: 320%;
+    color: hsl(160, 100%, 50%);
+    text-shadow: 3px 2px 0px rgb(0, 93, 71);
 }
+
 
 h3 {
     color: hsl(159, 17%, 43%)
