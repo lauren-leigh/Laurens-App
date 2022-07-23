@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+  background-color: hsl(257, 24%, 15%);
+}
+
+.App {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+

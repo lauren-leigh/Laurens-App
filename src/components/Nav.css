@@ -1,0 +1,28 @@
+
+.nav {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(160, 100%, 50%);
+    color: hsl(257, 24%, 15%);;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(160, 100%, 50%);
+    margin-right: 5%;
+}
+
+li {
+    display: flex;
+    background-color: hsl(160, 100%, 50%);
+}
+
+h2 {
+    background-color: hsl(160, 100%, 50%);
+    margin-left: 5%;
+}
