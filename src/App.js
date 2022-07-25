@@ -1,15 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import Name from './components/Namesake';
-import Nav from './components/Nav';
+import Nav from './Nav/Nav';
+// import Name from './Namesake/Namesake';
+import { 
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from 'react-router-dom';
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <Nav />
-      <Name />
+      <Router>
+        <Nav />
+        <Routes>
+          <Route path='/' />
+        </Routes>
+      </Router>
     </div>
   );
 }
-
-export default App;

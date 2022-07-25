@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from './Namesake.css';
+import './Namesake.css';
 
 function Name() {
     return (

@@ -1,27 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oleo+Script+Swash+Caps&display=swap');
 
 .nav {
-    color: white;
+    background-color: hsl(257, 24%, 15%);
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    background-color: hsl(160, 100%, 50%);
-    color: hsl(257, 24%, 15%);;
+    justify-content: flex-end;
 }
 
-ul {
-    list-style: none;
+.nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     background-color: hsl(160, 100%, 50%);
-    margin-right: 5%;
+    position: fixed;
+    /* top: -50%; */
+    transition: 850ms;
+    width: 100%;
 }
 
-li {
+.logo-container {
+    background-color: hsl(160, 100%, 50%);
+    margin-left: 5%;
+}
+
+.link-container {
     display: flex;
+    flex-direction: row;
+    background-color: hsl(160, 100%, 50%);
+    margin-right: 20%;
+}
+
+.nav-text {
+    list-style: none;
+    margin-right: 20%;
+    font-size: 150%;
     background-color: hsl(160, 100%, 50%);
 }
+
+span {
+    background-color: hsl(160, 100%, 50%);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(257, 24%, 15%);
+    font-weight: bolder;
+}
+
+.menu-up,
+.menu-down {
+    color: hsl(160, 100%, 50%);
+    font-size: 200%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+    position: fixed;
+    top: 11%;
+}
+
+ .menu-up svg {
+    background-color: hsl(160, 100%, 50%);
+    color: hsl(257, 24%, 15%);
+    padding: 1%;
+}
+
+ .menu-down svg {
+    color: hsl(160, 100%, 50%);
+    background-color: hsl(257, 24%, 15%);
+    padding: 1%;
+ }
+
 
 h2 {
     background-color: hsl(160, 100%, 50%);
@@ -30,6 +79,8 @@ h2 {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 6s;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 250%;
 }
 
 @keyframes spin {
@@ -62,4 +113,4 @@ h2 {
     100% {
         text-shadow: 0 0 hsl(257, 24%, 15%);
      }
-}
+} 

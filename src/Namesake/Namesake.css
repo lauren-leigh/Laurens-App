@@ -2,6 +2,7 @@
 .name-holder {
     margin-top: 20%;
     perspective: 500px;
+    margin-left: 5%;
 }
 
 h1 {
