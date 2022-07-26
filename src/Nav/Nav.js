@@ -6,16 +6,16 @@ import {NavbarData} from "./NavData"
 
 function Nav() {
 
-    const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
+    const [dropdown, setDropdown] = useState(false);
+    const showDropdown = () => setDropdown(!dropdown);
 
     return (
         <>
-            <div className={sidebar ? "nav-container active" : "nav-container"}>
-                <div className="logo-container">
+            <div className={dropdown ? "nav-container-active" : "nav-container"}>
+                <div className={dropdown ? "logo-container-active" : "logo-container"}>
                     <h2>L</h2>
                 </div>
-                <div className="link-container">
+                <div className={dropdown ? "link-container-active" : "link-container"}>
                     {NavbarData.map((link, index) => {
                         return (
                             <li key={index} className={link.className}>
@@ -27,7 +27,7 @@ function Nav() {
                     })}
                 </div>
             </div>
-            <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+            <nav className={dropdown ? "nav-menu active" : "nav-menu"}>
                 <ul className="nav-menu-items"></ul>
                 <li className="navbar-toggle">
                     <Link to="#" className="menu-up">
@@ -37,7 +37,7 @@ function Nav() {
             </nav>
             <div className="nav">
                 <Link to="#" className="menu-down">
-                    <ImMenu3 onClick={showSidebar}/>
+                    <ImMenu3 onClick={showDropdown}/>
                 </Link>
             </div>
         </>
