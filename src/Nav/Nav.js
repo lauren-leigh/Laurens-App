@@ -13,7 +13,7 @@ function Nav() {
         <>
             <div className={dropdown ? "nav-container-active" : "nav-container"}>
                 <div className={dropdown ? "logo-container-active" : "logo-container"}>
-                    <h2>L</h2>
+                    <h2>LH</h2>
                 </div>
                 <div className={dropdown ? "link-container-active" : "link-container"}>
                     {NavbarData.map((link, index) => {
@@ -27,15 +27,12 @@ function Nav() {
                     })}
                 </div>
             </div>
-            <nav>
-                <ul className="nav-menu-items"></ul>
-                <li className="navbar-toggle">
-                    <Link to="#" className={dropdown ? "menu-up" : "menu-up-active"}>
-                        <ImMenu4 onClick={showDropdown}/>
-                    </Link>
-                </li>
-            </nav>
-            <div className="nav">
+            <div>
+                <Link to="#" className={dropdown ? "menu-up" : "menu-up-active"}>
+                    <ImMenu4 onClick={showDropdown}/>
+                </Link>
+            </div>
+            <div>
                 <Link to="#" className={dropdown ? "menu-down-active" : "menu-down"}>
                     <ImMenu3 onClick={showDropdown}/>
                 </Link>

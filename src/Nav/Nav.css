@@ -14,7 +14,7 @@
     align-items: center;
     background-color: hsl(160, 100%, 50%);
     position: fixed;
-    top: -4%;
+    top: -50%;
     width: 100%;
     transition: 2s;
 }
@@ -70,6 +70,10 @@ a {
     font-weight: bolder;
 }
 
+a:hover {
+    text-shadow: 0px 0px 10px hsl(160, 100%, 22%);
+}
+
 .menu-up,
 .menu-down {
     font-size: 200%;
@@ -91,11 +95,23 @@ a {
 .menu-down {
     right: -2%;
     top: 0%;
+    transition: 1s;
+}
+
+.menu-down-active {
+    right: 0%;
+    top: -3%;
 }
 
 .menu-up {
     right: -2%;
+    /* transition: 1s; */
 }
+
+/* .menu-up-active {
+    right: 0%;
+    top: -3%;
+} */
 
 
 h2 {
