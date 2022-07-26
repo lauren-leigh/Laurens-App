@@ -27,16 +27,16 @@ function Nav() {
                     })}
                 </div>
             </div>
-            <nav className={dropdown ? "nav-menu active" : "nav-menu"}>
+            <nav>
                 <ul className="nav-menu-items"></ul>
                 <li className="navbar-toggle">
-                    <Link to="#" className="menu-up">
-                        <ImMenu4/>
+                    <Link to="#" className={dropdown ? "menu-up" : "menu-up-active"}>
+                        <ImMenu4 onClick={showDropdown}/>
                     </Link>
                 </li>
             </nav>
             <div className="nav">
-                <Link to="#" className="menu-down">
+                <Link to="#" className={dropdown ? "menu-down-active" : "menu-down"}>
                     <ImMenu3 onClick={showDropdown}/>
                 </Link>
             </div>

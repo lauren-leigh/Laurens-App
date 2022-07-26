@@ -14,9 +14,9 @@
     align-items: center;
     background-color: hsl(160, 100%, 50%);
     position: fixed;
-    top: -50%;
+    top: -4%;
     width: 100%;
-    transition: 1s;
+    transition: 2s;
 }
 
 .nav-container-active {
@@ -27,7 +27,6 @@
     align-items: center;
     width: 100%;
     top: 0;
-    transition: 1s;
 }
 
 .logo-container {
@@ -73,7 +72,6 @@ a {
 
 .menu-up,
 .menu-down {
-    color: hsl(160, 100%, 50%);
     font-size: 200%;
     display: flex;
     justify-content: flex-end;
@@ -82,17 +80,22 @@ a {
     top: 4%;
 }
 
- .menu-up svg {
+.menu-up svg,
+.menu-down svg {
     background-color: hsl(160, 100%, 50%);
     color: hsl(257, 24%, 15%);
-    padding: 1%;
+    padding: 10%;
+    font-size: 140%;
 }
 
- .menu-down svg {
-    color: hsl(160, 100%, 50%);
-    background-color: hsl(257, 24%, 15%);
-    padding: 1%;
- }
+.menu-down {
+    right: -2%;
+    top: 0%;
+}
+
+.menu-up {
+    right: -2%;
+}
 
 
 h2 {
