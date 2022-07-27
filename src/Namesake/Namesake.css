@@ -1,13 +1,11 @@
 
 .name-holder {
-    margin-top: 10%;
-    perspective: 500px;
-    margin-left: 5%;
-    position: relative;
+    margin-top: 15%;
+    margin-left: 8%;
 }
 
 h1 {
-    font-size: 320%;
+    font-size: 400%;
     color: hsl(160, 100%, 50%);
     text-shadow: 3px 2px 0px rgb(0, 93, 71);
 }
@@ -15,4 +13,14 @@ h1 {
 
 h3 {
     color: hsl(159, 17%, 43%)
+}
+
+@media screen and (max-width: 940px) {
+    .name-holder {
+        margin-top: 30%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 320%;
+    }
 }
