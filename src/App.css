@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-* {
-  background-color: hsl(258, 11%, 36%);
-}
-
 .App {
   font-family: 'Comfortaa', cursive;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 .header {
     position: fixed;
@@ -23,10 +23,15 @@
     background-color: hsl(257, 24%, 15%);
 }
 
-.header .navbar h2 {
-    width: 250px;
-    height: auto;
-    background-color: hsl(257, 24%, 15%);
+.header .navbar .logo {
+    text-decoration: none;
+}
+
+.header .navbar .logo h2 {
+    color: hsl(160, 100%, 50%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 250%;
+    text-align: center;
 }
 
 .header .nav-menu {
@@ -43,7 +48,7 @@ ul {
     list-style: none;
 }
 
-a {
+.nav-item a {
     text-decoration: none;
     color: hsl(160, 100%, 90%);
     font-size: 1.3rem;
