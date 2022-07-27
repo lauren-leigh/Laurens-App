@@ -3,6 +3,7 @@
     margin-top: 10%;
     perspective: 500px;
     margin-left: 5%;
+    position: relative;
 }
 
 h1 {

@@ -1,44 +1,75 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
 import './Nav.css'
-import { ImMenu3, ImMenu4 } from "react-icons/im";
-import {NavbarData} from "./NavData"
+import { TiThMenuOutline } from "react-icons/ti";
+import { IoMdCloseCircle } from "react-icons/io";
 
 function Nav() {
 
-    const [dropdown, setDropdown] = useState(false);
-    const showDropdown = () => setDropdown(!dropdown);
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click)
 
     return (
-        <>
-            <div className={dropdown ? "nav-container-active" : "nav-container"}>
-                <div className={dropdown ? "logo-container-active" : "logo-container"}>
+        <div className="header">
+            <nav className="navbar">
+                <a href="/" className="logo">
                     <h2>LH</h2>
+                </a>
+                <div className="menu-bars" onClick={handleClick}>
+                    {click ? (<IoMdCloseCircle />) : (<TiThMenuOutline />)}
                 </div>
-                <div className={dropdown ? "link-container-active" : "link-container"}>
-                    {NavbarData.map((link, index) => {
-                        return (
-                            <li key={index} className={link.className}>
-                                <Link to={link.path}>
-                                    <span>{link.title}</span>
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </div>
-            </div>
-            <div>
-                <Link to="#" className={dropdown ? "menu-up" : "menu-up-active"}>
-                    <ImMenu4 onClick={showDropdown}/>
-                </Link>
-            </div>
-            <div>
-                <Link to="#" className={dropdown ? "menu-down-active" : "menu-down"}>
-                    <ImMenu3 onClick={showDropdown}/>
-                </Link>
-            </div>
-        </>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className="nav-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="/">About</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="/">Work</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="/">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     )
+
 }
 
 export default Nav
+
+
+    // const [dropdown, setDropdown] = useState(false);
+    // const showDropdown = () => setDropdown(!dropdown);
+
+    // return (
+    //     <>
+    //         <div className={dropdown ? "nav-container-active" : "nav-container"}>
+    //             <div className={dropdown ? "logo-container-active" : "logo-container"}>
+    //                 <h2>LH</h2>
+    //             </div>
+    //             <div className={dropdown ? "link-container-active" : "link-container"}>
+    //                 {NavbarData.map((link, index) => {
+    //                     return (
+    //                         <li key={index} className={link.className}>
+    //                             <Link to={link.path}>
+    //                                 <span>{link.title}</span>
+    //                             </Link>
+    //                         </li>
+    //                     )
+    //                 })}
+    //             </div>
+    //         </div>
+    //         <div>
+    //             <Link to="#" className={dropdown ? "menu-up" : "menu-up-active"}>
+    //                 <ImMenu4 onClick={showDropdown}/>
+    //             </Link>
+    //         </div>
+    //         <div>
+    //             <Link to="#" className={dropdown ? "menu-down-active" : "menu-down"}>
+    //                 <ImMenu3 onClick={showDropdown}/>
+    //             </Link>
+    //         </div>
+    //     </>
+    // )

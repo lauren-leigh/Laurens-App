@@ -1,6 +1,6 @@
 import './App.css';
 import Nav from './Nav/Nav';
-import Name from './Namesake/Namesake';
+// import Name from './Namesake/Namesake';
 import { 
   BrowserRouter as Router,
   Route,
@@ -17,7 +17,6 @@ export default function App() {
           <Route path='/' />
         </Routes>
       </Router>
-      <Name />
     </div>
   );
 }
