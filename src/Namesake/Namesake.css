@@ -50,9 +50,17 @@ h3 {
 
 @media screen and (max-width: 940px) {
     .name-holder {
+        margin-left: 0%;
         margin-top: 30%;
         text-align: center;
     }
+        .name-holder:before {
+            content: '';
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/cool-background.png') no-repeat center center/cover;
+            height: 155vh;
+            width: 100%;
+            position: absolute;
+        }
     h1 {
         font-size: 320%;
     }
