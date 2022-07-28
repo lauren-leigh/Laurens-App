@@ -3,7 +3,8 @@
     background-color: hsl(256, 12%, 41%);
     padding: 16rem 1rem 16rem 1rem;
     width: 100%;
-    margin-top: -15%;
+    height: 100vh;
+    margin-top: -16.5%;
 }
 
 .info {
@@ -17,7 +18,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 }
 
 .about .container img {
@@ -30,6 +30,7 @@
 .about .container .column h2 {
     color: hsl(160, 100%, 50%);
     text-align: center;
+    font-size: 300%;
 }
 
 .about .container .column p {
@@ -39,27 +40,29 @@
 
 @media screen and (max-width: 800px) {
     .about {
-        padding: 22rem 1rem 22rem 1rem;
+        padding: 10rem 1rem 10rem 1rem;
         width: 100%;
+        height: 100vh;
     }
     .about .container {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         margin-left: 0%;
     }
     .about .container img {
-        position: absolute;
-        top: 120%;
-        height: 14rem;
+        height: 90%;
         border: double 1px hsl(160, 100%, 50%);
         border-radius: 10%;
     }
     .about .column {
         text-align: center;
+        margin-top: 5%;
     }
     .about .container .column h2 {
         color: hsl(160, 100%, 50%);
         border-bottom: solid 1px hsl(160, 100%, 50%);
         padding-bottom: 5%;
+        font-size: 200%;
     }
 }
