@@ -27,9 +27,6 @@ function Nav() {
                     <li className="nav-item">
                         <a href="/">Work</a>
                     </li>
-                    <li className="nav-item">
-                        <a href="/">Contact</a>
-                    </li>
                 </ul>
             </nav>
         </div>

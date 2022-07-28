@@ -3,7 +3,7 @@ import Nav from './Nav/Nav';
 import Name from './Namesake/Namesake';
 import About from './Pages/About';
 import Work from './Pages/Work';
-import Contact from './Pages/Contact';
+import QuoteFetch from './Quotes/quotes';
 
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
       <Name />
       <About />
       <Work />
-      {/* <Contact /> */}
+      {/* <QuoteFetch /> */}
     </div>
   );
 }
