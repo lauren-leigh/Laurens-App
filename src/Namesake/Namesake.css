@@ -48,24 +48,32 @@ h3 {
     margin-left: 5%;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     .name-holder {
-        margin-left: 0%;
-        margin-top: 30%;
+        width: 100%;
+        margin-left: -5%;
+        margin-top: 25%;
         text-align: center;
     }
-        .name-holder:before {
-            content: '';
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/cool-background.png') no-repeat center center/cover;
-            height: 155vh;
-            width: 100%;
-            position: absolute;
-        }
-    h1 {
-        font-size: 320%;
+    .name-holder:before {
+        content: '';
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/cool-background.png') no-repeat center center/cover;
+        height: 155vh;
+        width: 100%;
+        position: absolute;
+    }
+    .name-holder h1 {
+        font-size: 200%;
+    }
+    .name-holder h3 {
+        width: 100%;
+        font-size: 70%;
     }
     .icons {
         margin-left: 0%;
         justify-content: center;
+    }
+    .icons a {
+        font-size: 1.7rem;
     }
 }

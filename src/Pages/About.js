@@ -9,8 +9,8 @@ function About() {
             <img src={headshot} alt='headshot' />
             <div className='column'>
                 <h2>About</h2>
-                <span className='line'></span>
-                <p>PLACEHOLDER</p>
+                <span className='info'></span>
+                <p>PLACEHOLD RLACEHOLD ERLACEH OLDER ACEHOLD ERLA CEHOLDERLA CEHOLDERLACEHOLDERLACEHOLDERLACEHOLDER</p>
                 <p>PLACEHOLDER</p>
             </div>
         </div>
