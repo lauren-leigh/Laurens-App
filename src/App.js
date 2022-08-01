@@ -11,9 +11,9 @@ export default function App() {
     <div className="App">
       <Nav />
       <Name />
+      {/* <QuoteFetch /> */}
       <About />
       <Work />
-      {/* <QuoteFetch /> */}
     </div>
   );
 }

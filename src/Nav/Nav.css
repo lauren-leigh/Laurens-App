@@ -64,7 +64,10 @@ ul {
     display: none;
 }
 
-
+.nav-item .active {
+    padding-bottom: 12px;
+    border-bottom: 3px solid hsl(160, 100%, 50%);
+}
 
 
 @media screen and (max-width: 940px) {

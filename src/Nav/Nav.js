@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import './Nav.css'
 import { TiThMenuOutline } from "react-icons/ti";
 import { IoMdCloseCircle } from "react-icons/io";
+import { Link } from "react-scroll";
 
 function Nav() {
 
     const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click)
+    const handleClick = () => setClick(!click);
+    const closeMenu = () => setClick(false);
 
     return (
         <div className="header">
@@ -19,13 +21,13 @@ function Nav() {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <a href="/">Home</a>
+                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/">About</a>
+                        <Link to="about" spy={true} smooth={true} offset={-90} duration={500} onClick={closeMenu}>About</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/">Work</a>
+                        <Link to="work" spy={true} smooth={true} offset={-90} duration={500} onClick={closeMenu}>Work</Link>
                     </li>
                 </ul>
             </nav>

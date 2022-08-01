@@ -4,7 +4,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs"
 
 function Name() {
     return (
-        <div className="main-container">
+        <div className="main-container" id="home">
             <div className="name-holder">
                 <h1>Lauren Hanna</h1>
                 <h3>Finance Analyst turned Full Stack Developer </h3>
