@@ -1,0 +1,22 @@
+
+.body-container {
+    background-color: hsl(257, 24%, 15%);
+}
+
+.timeline {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(257, 24%, 15%);
+}
+
+.timeline svg {
+    font-size: 150%;
+}
+
+.vertical-timeline-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+    background-color: hsl(257, 24%, 15%);;
+}

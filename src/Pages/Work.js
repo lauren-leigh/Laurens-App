@@ -1,5 +1,6 @@
 import React from 'react'
 import './Work.css';
+import TimelineFunc from './timeline';
 
 function Work() {
   return (
@@ -8,8 +9,7 @@ function Work() {
             <h2>Work Experience</h2>
         </div>
         <div className="body-container">
-            <p>PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER</p>
-            <p>PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER</p>
+            <TimelineFunc />
 
         </div>
     </div>
