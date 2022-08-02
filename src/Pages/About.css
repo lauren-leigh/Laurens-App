@@ -20,7 +20,7 @@
 }
 
 .about .container img {
-    height: 20rem;
+    height: 10rem;
     border: double 1px hsl(160, 100%, 50%);
     border-radius: 10%;
     margin-right: 8%;
@@ -46,11 +46,13 @@
     .about .container {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         margin-left: 0%;
     }
     .about .container img {
-        height: 90%;
+        height: 10rem;
+        width: 12rem;
         border: double 1px hsl(160, 100%, 50%);
         border-radius: 10%;
     }

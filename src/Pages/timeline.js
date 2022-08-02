@@ -7,7 +7,7 @@ import { MdWork } from "react-icons/md";
 
 function TimelineFunc() {
 
-let iconStyles = {border: '1px solid hsl(160, 100%, 50%)', borderRadius: "50%", background: 'hsl(160, 100%, 50%)', color: "hsl(257, 24%, 15%)", padding: "1.5% 1.5% 1% 1.5%"};
+// let iconStyles = {border: '1px solid hsl(160, 100%, 50%)', borderRadius: "50%", background: 'hsl(160, 100%, 50%)', color: "hsl(257, 24%, 15%)", padding: "1.5% 1.5% 1% 1.5%"};
 
   return (
     <div className="timeline">
@@ -21,7 +21,7 @@ let iconStyles = {border: '1px solid hsl(160, 100%, 50%)', borderRadius: "50%", 
                             key={element.id}
                             date={element.date}
                             dateClassName="date"
-                            iconStyle={iconStyles}
+                            // iconStyle={iconStyles}
                             icon={isWorkIcon ? <MdWork /> : < GiGraduateCap />}
                             >
                                 <h3 className="timeline-title">{element.title}</h3>

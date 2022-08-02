@@ -75,6 +75,7 @@ ul {
     }
     .header .navbar {
         max-width: 100%;
+        padding-bottom: 3%;
     }
     .menu-bars {
         display: block;
@@ -90,16 +91,20 @@ ul {
     .nav-menu {
         position: fixed;
         right: -100%;
-        top: 90px;
+        margin-top: 9%;
+        top: 0;
         flex-direction: column;
         width: 100%;
         height: 98vh;
         z-index: 999;
         text-align: center;
         transition: .3s;
+        background-color: hsl(257, 24%, 15%);
     }
     .nav-menu.active {
         right: 0;
+        top: 0;
+        margin-top: 9%;
         background-color: hsl(257, 24%, 15%);
         height: 100%;
         text-align: center;

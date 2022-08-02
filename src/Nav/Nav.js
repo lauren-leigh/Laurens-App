@@ -24,10 +24,10 @@ function Nav() {
                         <Link to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="about" spy={true} smooth={true} offset={-90} duration={500} onClick={closeMenu}>About</Link>
+                        <Link to="about" spy={true} smooth={true} offset={-45} duration={500} onClick={closeMenu}>About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="work" spy={true} smooth={true} offset={-90} duration={500} onClick={closeMenu}>Work</Link>
+                        <Link to="work" spy={true} smooth={true} offset={-45} duration={500} onClick={closeMenu}>Work</Link>
                     </li>
                 </ul>
             </nav>

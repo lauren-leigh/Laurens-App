@@ -20,3 +20,25 @@
     margin-bottom: 5%;
     background-color: hsl(257, 24%, 15%);;
 }
+
+.vertical-timeline-element-icon {
+    border: 1px solid hsl(160, 100%, 50%); 
+    border-radius: 50%; 
+    background-color: hsl(160, 100%, 50%);
+    color: hsl(257, 24%, 15%); 
+    padding: 1.5% 1.5% 1% 1.5%;
+    margin-right: 5%;
+}
+
+
+@media screen and (max-width: 940px) {
+    .vertical-timeline-element-icon {
+        border: 1px solid hsl(257, 24%, 15%);
+        /* border-radius: 50%; */
+        background-color: hsl(257, 24%, 15%);
+        color: pink;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+}

@@ -1,6 +1,5 @@
 
 .work-container {
-    height: 100vh;
     width: 100%;
     padding: 5rem 1rem 16rem 1rem;
     background-color: hsl(257, 24%, 15%);
@@ -19,10 +18,12 @@
 
 @media screen and (max-width: 940px) {
     .work-container {
-        padding: 8rem 1rem 8rem 1rem;
+        padding: 3rem 1rem 8rem 1rem;
+        width: 100%;
     }
     .work-container .head-container {
         font-size: 100%;
+        margin-bottom: 15%;
     }
     .work-container .body-container {
         font-size: 80%;
